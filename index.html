@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Stephen's Coding Site</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+
+    <style>
+        html {
+            font-family: 'Oxygen', sans-serif;
+        }
+        body {
+            margin: 0px;
+        }
+
+        .text {
+            display: column;
+            float: center;
+            justify-content: left;
+            padding-top: 40px;
+            margin-top: 40px;
+            font-size: 1em;
+        }
+
+        .bg {
+            border: 5px none gray;
+            background-color: rgb(92, 187, 219);
+            width: 30%;
+            height: auto;
+        }
+
+        .picture {
+            display: flex;
+            float: center;
+            justify-content: center;
+        }
+
+        .font {
+            display: flex;
+            float: left;
+            justify-content: center;
+            font-size: 4em;
+            color: blue;
+        }
+
+        .img1 {
+            display: flex;
+            float: left;
+        }
+
+        .navbar {
+            background: #cea135;
+        }
+        .navbar div {
+            display: none;
+        }
+        .navbar .toggle,
+        .navbar .brand {
+            display: inline-block;
+        }
+        .navbar .link {
+            display: block;
+            text-align: center;
+            padding: 1em;
+            text-decoration: none;
+            background: #1619c2a6;
+            color: white;
+        }
+        .navbar .link:hover,
+        .navbar .link:active {
+            color: #bf70d3d7;
+            background: white;
+        }
+        .navbar .brand {
+            width: 10em;
+            text-align: center;
+            padding: 1em;
+            color: white;
+        }
+        .navbar a {
+            text-decoration: none;
+        }
+        .navbar .toggle {
+            padding: 1em;
+            color: black;
+        }
+        @media (min-width: 48em) {
+            .navbar {
+                display: flex;
+            }
+            .navbar .left,
+            .navbar .right {
+                display: flex;
+                flex: 1;
+            }
+            .navbar .link {
+                width: auto;
+            }
+            .navbar .right {
+                justify-content: flex-end;
+            }
+            .navbar .toggle {
+                display: none;
+            }
+        }
+        @media (min-width: 48em) {
+            .navbar div {
+                display: flex;
+            }
+        }
+        @media (max-width: 48em) {
+            .navbar.active .toggle {
+                background: #52ddd2b6;
+                color: white;
+            }
+            .navbar .brand {
+                text-align: left;
+            }
+            .navbar.active div {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html" class="brand">Coding University<i class="fas fa-university"></i></a>
+        <div class="left">
+            <a href="OurStaff.html" class="link">Our Staff</a>
+            <a href="curriculam.html" class="link">Curriculam</a>
+        </div>
+        <div class="right">
+            <a href="schedule.html" class="link">Schedule A Tour</a>
+        </div>
+    </div>
+
+
+    <div class="font">Learn 2 Code @ Coding University</div>
+    <div class="bg">
+        <div class="text">
+            <h2>What We Can Do 4 You</h2>
+            <ul>
+                <li>Advance Your Career</li>
+                <li>Get Noticed By 500 Fortune Companies</li>
+                <li>Increase Your Current Skills</li>
+                <li>Design Websites from Basic to Interactive</li>
+                <li>Availablity At Campus or Online</li>
+                <li>Help With Resume Close to Completion</li>
+                <li>Build Out Projects that Attract Companies</li>
+            </ul>
+        </div>
+    </div>
+    <div class="picture">
+        <img src="https://sp.yimg.com/ib/th?id=OIP.vVMPetXlOq4r-spWCXCqpwHaE8&pid=15.1&rs=1&c=1&qlt=95&w=143&h=95" alt style="width: 215px; height: 215px; border-radius: 215px;">
+        <em>"Thanks to Coding University, I have the<br> skils to develop any webpage."</em>
+    </div>
+
+</body>
+
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+
+</html>

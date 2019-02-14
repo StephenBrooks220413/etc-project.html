@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Homepage</title>
+</head>
+
+<style type="text/css">
+    #ProfilePage
+    {
+        display: flex;
+        margin: 50px auto;
+        width: 635px;
+        border: 4px solid red;
+    }
+    
+    #LeftCol
+    {
+        float: left;
+        width: 200px;
+        text-align: center;
+        margin-right: 20px;
+    
+    border: 1px solid brown;
+    }
+    
+    .Photo
+    {
+        width: 200px;
+        height: 200px;
+        border: 1px solid green;
+    }
+    
+    #PhotoOptions
+    {
+        text-align: center;
+        width: 200px;
+        border: 4px groove brown;
+    }
+    
+    #Info
+    {
+        width: 400px;
+        text-align: center;
+        float: right;
+        /* background-color: gray; */
+    }
+    
+    #Info strong
+    {
+        display: inline-block;
+        width: 100px;
+        border: 1px solid black;
+        background-color: gray;
+    }
+    
+    #Info span
+    {
+        display: inline-block;
+        width: 250px;
+        border: 1px solid black;
+        background-color: gray;
+    }
+    </style>
+
+<body>
+    <div id="ProfilePage">
+        <div id="LeftCol">
+            <div id="Photo">
+                <img src="https://sp.yimg.com/ib/th?id=OIP.A3mO0G7Z_Um1u7wXe6aWdwAAAA&pid=15.1&rs=1&c=1&qlt=95&w=104&h=104" alt style="width: 202px; height: 202px;">
+            </div>
+            <div id="ProfileOptions">
+                    <em>"Photo taken 2014"</em>
+                    </div>
+                </div>
+            
+                <div id="Info">
+                    <p>
+                        <strong>Name</strong>
+                        <span>John Doe</span>
+                    </p>
+                    <p>
+                        <strong>Address</strong>
+                        <span>123 Any Street</span>
+                    </p>
+                    <p>
+                        <strong>City</strong>
+                        <span>Lost City</span>
+                    </p>
+                    <p>
+                        <strong>State</strong>
+                        <span>Anystate</span>
+                    </p>
+                    <p>
+                        <strong>Phone</strong>
+                        <span>555-555-5555</span>
+                    </p>
+                </div>
+            
+                <!-- Needed because other elements inside ProfilePage have floats -->
+                <div style="clear:both"></div>
+        </div>
+</body>
+</html>
